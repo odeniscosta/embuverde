@@ -4,7 +4,7 @@
    Tipografia: Syne (display) + Inter (corpo)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   /* ── Cores principais ── */
@@ -31,7 +31,7 @@
   --on-dark-muted: rgba(237,244,240,0.40);
 
   /* ── Tipografia ── */
-  --f-display: 'Syne', sans-serif;
+  --f-display: 'Plus Jakarta Sans', sans-serif;
   --f-body:    'Inter', sans-serif;
 
   /* ── Layout ── */

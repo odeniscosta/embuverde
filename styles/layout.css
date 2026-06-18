@@ -29,18 +29,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--f-display);
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--on-dark);
   flex-shrink: 0;
 }
-.brand-mark {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
-.brand-name b { color: var(--lime); font-style: italic; }
 
 /* Badge licenciado */
 .brand-badge {
@@ -117,6 +113,11 @@
   body.nav-open .icon-menu  { display: none; }
   body.nav-open .icon-close { display: block; }
 }
+@media (max-width: 480px) {
+  .brand-logo { height: 38px; }
+  .site-header { padding: 14px 0; }
+  .site-header.is-scrolled { padding: 10px 0; }
+}
 
 /* ── Footer ── */
 .site-footer {
@@ -130,10 +131,13 @@
   gap: 48px;
   margin-bottom: 48px;
 }
-.footer-brand { display: flex; align-items: center; gap: 10px; color: var(--on-dark); margin-bottom: 12px; }
-.footer-brand .brand-mark { width: 28px; height: 28px; }
-.footer-brand span { font-family: var(--f-display); font-size: 17px; font-weight: 700; }
-.footer-brand b { color: var(--lime); font-style: italic; }
+.footer-brand { margin-bottom: 16px; }
+.footer-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
 .footer-tagline { font-size: 13.5px; color: var(--on-dark-muted); margin-bottom: 20px; line-height: 1.6; }
 .footer-seal {
   display: inline-flex;
