@@ -4,7 +4,7 @@
    Tipografia: Fraunces (display) + Manrope (corpo) + Space Mono (dados)
    =========================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Manrope:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Manrope:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap&font-display=swap');
 
 :root{
   /* cores */
@@ -34,7 +34,7 @@
   --ease: cubic-bezier(.22,.9,.3,1);
 }
 
-*{ box-sizing: border-box; }
+*{ box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html{ scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce){
   html{ scroll-behavior: auto; }
@@ -256,16 +256,17 @@ p{ margin:0; }
 
 .hero-finance{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   background: rgba(242,169,59,0.12);
   border: 1px solid rgba(242,169,59,0.3);
-  border-radius: 999px;
+  border-radius: 14px;
   padding: 9px 16px;
   margin-bottom: 20px;
-  width: fit-content;
+  max-width: 420px;
   font-size: 13.5px;
   color: rgba(246,241,231,0.9);
+  line-height: 1.5;
 }
 .hero-finance svg{ width: 16px; height: 16px; color: var(--amber); flex-shrink: 0; }
 .hero-finance strong{ color: var(--amber); }
@@ -299,8 +300,8 @@ p{ margin:0; }
 }
 .stat-chip .num{ font-size: 19px; font-weight: 700; color: var(--clay); display:block; }
 .stat-chip .lbl{ font-size: 10.5px; letter-spacing:0.04em; color: var(--ink-soft); text-transform: uppercase; }
-.stat-chip--a{ top: 6%; left: -6%; animation: float 6s var(--ease) infinite; }
-.stat-chip--b{ bottom: 10%; right: -8%; animation: float 7s var(--ease) infinite reverse; }
+.stat-chip--a{ top: 6%; left: -2%; animation: float 6s var(--ease) infinite; }
+.stat-chip--b{ bottom: 10%; right: -2%; animation: float 7s var(--ease) infinite reverse; }
 @keyframes float{
   0%,100%{ transform: translateY(0); }
   50%{ transform: translateY(-10px); }
@@ -601,7 +602,7 @@ section{ padding: 96px 0; }
 .contact-form label{ font-size: 13px; font-weight:700; color: var(--forest); }
 .contact-form input, .contact-form textarea{
   font-family: var(--f-body);
-  font-size: 15px;
+  font-size: 16px;
   padding: 12px 14px;
   border-radius: var(--radius-sm);
   border: 1.5px solid rgba(27,38,32,0.16);
@@ -713,15 +714,24 @@ section{ padding: 96px 0; }
   .coverage .wrap, .contact-grid{ grid-template-columns: 1fr; }
   .testimonial-grid{ grid-template-columns: 1fr; }
   .cta-band-inner{ flex-direction: column; align-items: flex-start; }
+  .cta-band-inner .btn{ align-self: stretch; justify-content: center; }
 }
 @media (max-width: 760px){
   .hero .wrap{ grid-template-columns: 1fr; }
-  .hero-art{ order:-1; max-width: 320px; margin: 0 auto 10px; }
-  .hero{ padding: 140px 0 70px; text-align:left; }
+  .hero-art{ order:-1; max-width: 300px; margin: 0 auto 10px; }
+  .hero{ padding: 120px 0 64px; }
+  .stat-chip{ display: none; }
   .benefit-grid{ grid-template-columns: 1fr; }
-  section{ padding: 70px 0; }
+  .process-grid{ grid-template-columns: 1fr; row-gap: 28px; }
+  .section-head{ margin-bottom: 36px; }
+  section{ padding: 64px 0; }
+  .cta-band{ padding: 52px 0; }
   .footer-top{ flex-direction: column; align-items: flex-start; gap: 16px; }
   .footer-bottom{ flex-direction: column; align-items: flex-start; }
   .whatsapp-float{ bottom: 20px; right: 16px; width: 52px; height: 52px; }
   .whatsapp-float svg{ width: 24px; height: 24px; }
+}
+@media (max-width: 400px){
+  .hero-finance{ font-size: 12.5px; }
+  .hero-actions .btn{ width: 100%; justify-content: center; }
 }
