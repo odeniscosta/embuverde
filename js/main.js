@@ -2,6 +2,17 @@
 // TABOÃO VERDE — Interações principais
 // ============================================================
 
+// Fallback: config.js pode não estar disponível no servidor (é gitignored).
+// Garante que CONFIG exista com valores padrão para o script não abortar.
+if (typeof CONFIG === 'undefined') {
+  window.CONFIG = {
+    webhookUrl:   '',
+    whatsapp:     '5511919457686',
+    gtmId:        '',
+    metaPixelId:  '',
+  };
+}
+
 const WA = CONFIG.whatsapp;
 
 // ── Ano no footer ──
@@ -70,6 +81,9 @@ document.querySelectorAll('.faq-item').forEach(item => {
 });
 
 // ── Scroll reveal ──
+// Sinaliza ao CSS que o JS está ativo — só então .reveal fica opacity:0
+document.body.classList.add('js-ready');
+
 if ('IntersectionObserver' in window) {
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => {

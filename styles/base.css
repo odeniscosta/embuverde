@@ -166,14 +166,16 @@ h1, h2, h3, h4 {
 .check-list--dark li { color: var(--on-dark-soft); }
 .check-list--dark li::before { background-color: rgba(76,214,128,0.15); }
 
-/* ── Reveal on scroll ── */
+/* ── Reveal on scroll — Progressive Enhancement ──
+   Estado padrão: VISÍVEL. JS adiciona .js-ready ao body antes de configurar
+   o observer — só então o CSS esconde os elementos para animar a entrada.
+   Se o JS falhar por qualquer motivo, o conteúdo continua visível. */
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
   transition: opacity .65s var(--ease), transform .65s var(--ease);
 }
-.reveal.is-visible { opacity: 1; transform: translateY(0); }
-.reveal-delay-1 { transition-delay: .1s; }
-.reveal-delay-2 { transition-delay: .2s; }
-.reveal-delay-3 { transition-delay: .3s; }
-.reveal-delay-4 { transition-delay: .4s; }
+.js-ready .reveal              { opacity: 0; transform: translateY(20px); }
+.js-ready .reveal.is-visible   { opacity: 1; transform: translateY(0); }
+.js-ready .reveal-delay-1      { transition-delay: .1s; }
+.js-ready .reveal-delay-2      { transition-delay: .2s; }
+.js-ready .reveal-delay-3      { transition-delay: .3s; }
+.js-ready .reveal-delay-4      { transition-delay: .4s; }
