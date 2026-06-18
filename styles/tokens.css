@@ -1,0 +1,54 @@
+/* ============================================================
+   TABOÃO VERDE — Design Tokens
+   Paleta: midnight navy + verde sustentabilidade + lime energia + solar amarelo
+   Tipografia: Syne (display) + Inter (corpo)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ── Cores principais ── */
+  --midnight:      #0B1628;
+  --midnight-alt:  #0F1E34;
+  --forest:        #0D4A32;
+  --forest-alt:    #113D2A;
+  --sage:          #1A7A52;
+  --lime:          #4CD680;
+  --lime-dim:      rgba(76,214,128,0.14);
+  --lime-border:   rgba(76,214,128,0.22);
+  --solar:         #F5C518;
+  --solar-dim:     rgba(245,197,24,0.15);
+  --solar-border:  rgba(245,197,24,0.30);
+  --slate:         #F2F4F7;
+  --white:         #FFFFFF;
+  --ink:           #0F1923;
+  --ink-soft:      rgba(15,25,35,0.60);
+  --ink-muted:     rgba(15,25,35,0.36);
+
+  /* ── Textos sobre fundo escuro ── */
+  --on-dark:       #EDF4F0;
+  --on-dark-soft:  rgba(237,244,240,0.68);
+  --on-dark-muted: rgba(237,244,240,0.40);
+
+  /* ── Tipografia ── */
+  --f-display: 'Syne', sans-serif;
+  --f-body:    'Inter', sans-serif;
+
+  /* ── Layout ── */
+  --maxw:      1200px;
+  --gutter:    clamp(20px, 5vw, 60px);
+  --section-y: clamp(80px, 9vw, 120px);
+
+  /* ── Bordas ── */
+  --r:    16px;
+  --r-sm: 10px;
+  --r-xs: 6px;
+
+  /* ── Sombras ── */
+  --shadow-sm: 0 2px 8px -2px rgba(0,0,0,0.10);
+  --shadow-md: 0 8px 24px -8px rgba(0,0,0,0.20);
+  --shadow-lg: 0 20px 48px -12px rgba(0,0,0,0.30);
+
+  /* ── Transição ── */
+  --ease: cubic-bezier(.22,.9,.3,1);
+}
