@@ -113,7 +113,10 @@
   .nav-toggle { display: flex; z-index: 101; position: relative; }
   body.nav-open .icon-menu  { display: none; }
   body.nav-open .icon-close { display: block; }
+  .nav-wa-btn { display: flex; margin-top: 8px; }
 }
+
+.nav-wa-btn { display: none; }
 @media (max-width: 480px) {
   .brand-logo { height: 52px; max-width: 200px; }
   .site-header { padding: 14px 0; }

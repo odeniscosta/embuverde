@@ -86,6 +86,40 @@ function renderResults(bill) {
   });
 }
 
+// Botão WhatsApp direto — pula o formulário
+const calcWaDirect = document.getElementById('calc-wa-direct');
+calcWaDirect?.addEventListener('click', () => {
+  const selected = document.querySelector('input[name="solution"]:checked');
+  if (selected) calcData.solution = selected.value;
+
+  const solutionLabel = RATES[calcData.solution]?.label || calcData.solution;
+  const saving = fmt(Math.round(calcData.bill * RATES[calcData.solution].max));
+  const texto = [
+    `Olá, Taboão Verde! Fiz a simulação no site.`,
+    `Minha conta de luz é em média R$ ${calcData.bill}.`,
+    `Tenho interesse na ${solutionLabel} com economia de até ${saving}/mês.`,
+    `Quero saber mais!`,
+  ].join(' ');
+
+  fetch(CONFIG.webhookUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      nome: 'Não informado',
+      whatsapp: null,
+      tipo_cliente: null,
+      valor_conta: calcData.bill,
+      solucao_interesse: solutionLabel,
+      origem: 'calculadora_direto',
+      consentimento: true,
+      created_at: new Date().toISOString(),
+    }),
+  }).catch(() => {});
+
+  window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+  showStep(stepOk);
+});
+
 calcBtn2?.addEventListener('click', () => {
   const selected = document.querySelector('input[name="solution"]:checked');
   if (selected) calcData.solution = selected.value;
