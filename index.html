@@ -950,8 +950,16 @@
   </svg>
 </a>
 
-<script src="js/config.js"></script>
-<script src="js/main.js"></script>
-<script src="js/calculator.js"></script>
+<script>
+// CONFIG inline — não depende de arquivo externo nem de cache CDN
+window.CONFIG = {
+  webhookUrl:  'https://n8n-n8n.51ttcb.easypanel.host/webhook/MasterAgent',
+  whatsapp:    '5511919457686',
+  gtmId:       '',
+  metaPixelId: '',
+};
+</script>
+<script src="js/main.js?v=2"></script>
+<script src="js/calculator.js?v=2"></script>
 </body>
 </html>
