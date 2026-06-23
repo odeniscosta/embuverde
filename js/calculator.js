@@ -5,14 +5,14 @@
 
 // Taxas de economia (conservadoras, em compliance com "pode chegar a / até")
 const RATES = {
-  green:  { min: 0.12, max: 0.20, label: 'Conexão Green',  desc: 'Energia solar por assinatura, sem instalação' },
-  placas: { min: 0.70, max: 0.95, label: 'Conexão Placas', desc: 'Sistema fotovoltaico próprio no telhado' },
-  livre:  { min: 0.20, max: 0.30, label: 'Conexão Livre',  desc: 'Mercado Livre de Energia (média/alta tensão)' },
+  solar:  { min: 0.70, max: 0.95, label: 'Conexão Solar',  desc: 'Instalação gratuita no telhado, placas suas ao final do contrato' },
+  placas: { min: 0.70, max: 0.95, label: 'Conexão Placas', desc: 'Sistema fotovoltaico próprio no telhado desde o dia 1' },
+  livre:  { min: 0.20, max: 0.30, label: 'Conexão Livre',  desc: 'Mercado Livre de Energia (média/alta tensão), sem obra' },
 };
 
 const fmt = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
 
-let calcData = { bill: 0, solution: 'green' };
+let calcData = { bill: 0, solution: 'solar' };
 
 // ── Elementos ──
 const step1    = document.getElementById('calc-step-1');
@@ -59,7 +59,7 @@ function renderResults(bill) {
     const annual = saving * 12;
     return `
       <label class="calc-result-card" data-key="${key}">
-        <input type="radio" name="solution" value="${key}" ${key === 'green' ? 'checked' : ''}>
+        <input type="radio" name="solution" value="${key}" ${key === 'solar' ? 'checked' : ''}>
         <div class="calc-result-dot"></div>
         <div class="calc-result-info">
           <div class="calc-result-name">${r.label}</div>
@@ -79,9 +79,9 @@ function renderResults(bill) {
       calcData.solution = card.dataset.key;
     });
     // Marca o primeiro como selecionado por padrão
-    if (card.dataset.key === 'green') {
+    if (card.dataset.key === 'solar') {
       card.classList.add('is-selected');
-      calcData.solution = 'green';
+      calcData.solution = 'solar';
     }
   });
 }
