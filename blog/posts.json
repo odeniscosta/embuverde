@@ -6,5 +6,37 @@
     "excerpt": "Entenda como painéis solares transformam luz em economia real — e por que a instalação gratuita já é uma opção para residências e empresas na região.",
     "category": "Energia Solar",
     "image": ""
+  },
+  {
+    "slug": "mitos-e-verdades-energia-solar",
+    "title": "10 Mitos sobre Energia Solar que Precisam Ser Desmentidos de Uma Vez",
+    "date": "2026-06-22",
+    "excerpt": "\"É caro\", \"não funciona em dias nublados\", \"precisa de muita manutenção\" — saiba o que é mito e o que é verdade antes de tomar sua decisão.",
+    "category": "Energia Solar",
+    "image": "/images/blog/mitos-e-verdades-energia-solar.svg"
+  },
+  {
+    "slug": "lei-14300-o-que-mudou",
+    "title": "Lei 14.300/2022: O que Mudou e Por que É a Melhor Hora para Migrar para Energia Solar",
+    "date": "2026-06-17",
+    "excerpt": "O Marco Legal da Geração Distribuída consolidou os direitos de quem produz energia solar no Brasil. Entenda o que a lei garante e como aproveitar.",
+    "category": "Mercado & Setor",
+    "image": "/images/blog/lei-14300-o-que-mudou.svg"
+  },
+  {
+    "slug": "como-reduzir-conta-de-luz",
+    "title": "Como Reduzir a Conta de Luz: 5 Estratégias que Realmente Funcionam",
+    "date": "2026-06-10",
+    "excerpt": "Da troca de lâmpadas à migração para energia solar — veja quais estratégias têm impacto real no bolso e quais são apenas mito de economia.",
+    "category": "Economia",
+    "image": "/images/blog/como-reduzir-conta-de-luz.svg"
+  },
+  {
+    "slug": "energia-solar-impacto-ambiental",
+    "title": "Energia Solar e Meio Ambiente: O Impacto Real da Geração Limpa",
+    "date": "2026-06-03",
+    "excerpt": "Cada kilowatt gerado por painéis solares é um kilowatt a menos de fonte fóssil. Entenda o impacto ambiental concreto da energia solar e o papel de Taboão da Serra.",
+    "category": "Sustentabilidade",
+    "image": "/images/blog/energia-solar-impacto-ambiental.svg"
   }
 ]

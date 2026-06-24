@@ -1,0 +1,86 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1E34"/>
+      <stop offset="100%" stop-color="#0B1628"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg2)"/>
+
+  <!-- Grid sutil -->
+  <g stroke="rgba(245,197,24,0.05)" stroke-width="1">
+    <line x1="0" y1="90"  x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="250" y1="0" x2="250" y2="450"/>
+    <line x1="550" y1="0" x2="550" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+
+  <!-- Documento/scroll central -->
+  <rect x="240" y="80" width="200" height="260" rx="8" fill="#0D2140" stroke="rgba(245,197,24,0.40)" stroke-width="1.5"/>
+  <!-- Dobra do canto superior direito do documento -->
+  <path d="M400 80 L440 80 L440 120 Z" fill="rgba(245,197,24,0.25)"/>
+  <path d="M400 80 L400 120 L440 120" stroke="rgba(245,197,24,0.50)" stroke-width="1" fill="none"/>
+  <!-- Linhas do documento -->
+  <g stroke="rgba(237,244,240,0.15)" stroke-width="2" stroke-linecap="round">
+    <line x1="270" y1="150" x2="410" y2="150"/>
+    <line x1="270" y1="175" x2="410" y2="175"/>
+    <line x1="270" y1="200" x2="380" y2="200"/>
+    <line x1="270" y1="240" x2="410" y2="240"/>
+    <line x1="270" y1="265" x2="390" y2="265"/>
+    <line x1="270" y1="290" x2="360" y2="290"/>
+  </g>
+  <!-- Símbolo § (parágrafo legal) -->
+  <text x="340" y="230" text-anchor="middle" font-size="64" font-family="Georgia,serif" fill="rgba(245,197,24,0.20)" font-weight="bold">§</text>
+  <!-- Texto "14.300" no documento -->
+  <text x="340" y="118" text-anchor="middle" font-size="13" font-family="Inter,sans-serif" fill="rgba(245,197,24,0.80)" font-weight="600" letter-spacing="1">LEI 14.300</text>
+
+  <!-- Escudo com check (aprovação) -->
+  <path d="M560 140 L600 155 L600 190 C600 215 580 230 560 240 C540 230 520 215 520 190 L520 155 Z"
+        fill="rgba(76,214,128,0.12)" stroke="rgba(76,214,128,0.50)" stroke-width="1.5"/>
+  <!-- Check dentro do escudo -->
+  <path d="M544 190 L556 202 L578 175" stroke="#4CD680" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Raio de energia -->
+  <path d="M590 260 L572 295 L585 295 L565 335 L600 292 L585 292 L603 260 Z"
+        fill="rgba(245,197,24,0.70)" stroke="rgba(245,197,24,0.30)" stroke-width="1"/>
+
+  <!-- Estrelas/brilhos decorativos -->
+  <g fill="rgba(245,197,24,0.40)">
+    <circle cx="160" cy="120" r="3"/>
+    <circle cx="180" cy="180" r="2"/>
+    <circle cx="145" cy="200" r="4"/>
+    <circle cx="650" cy="130" r="3"/>
+    <circle cx="670" cy="90"  r="2"/>
+    <circle cx="640" cy="160" r="4"/>
+  </g>
+
+  <!-- Barras / gráfico de crescimento (lado esquerdo) -->
+  <g fill="none" stroke="rgba(76,214,128,0.30)" stroke-width="1">
+    <rect x="120" y="280" width="20" height="60" fill="rgba(76,214,128,0.10)" stroke-width="1"/>
+    <rect x="148" y="255" width="20" height="85" fill="rgba(76,214,128,0.15)" stroke-width="1"/>
+    <rect x="176" y="230" width="20" height="110" fill="rgba(76,214,128,0.20)" stroke-width="1"/>
+    <rect x="204" y="210" width="20" height="130" fill="rgba(76,214,128,0.25)" stroke-width="1"/>
+  </g>
+  <!-- Linha de tendência -->
+  <path d="M130 275 L158 250 L186 225 L214 205" stroke="rgba(76,214,128,0.60)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Painéis solares (pequenos, canto inferior direito) -->
+  <g opacity="0.40">
+    <rect x="630" y="310" width="60" height="36" rx="3" fill="#0D4A32" stroke="rgba(76,214,128,0.50)" stroke-width="1"/>
+    <line x1="650" y1="310" x2="650" y2="346" stroke="rgba(76,214,128,0.30)" stroke-width="0.8"/>
+    <line x1="670" y1="310" x2="670" y2="346" stroke="rgba(76,214,128,0.30)" stroke-width="0.8"/>
+    <line x1="630" y1="328" x2="690" y2="328" stroke="rgba(76,214,128,0.30)" stroke-width="0.8"/>
+    <rect x="698" y="310" width="60" height="36" rx="3" fill="#0D4A32" stroke="rgba(76,214,128,0.40)" stroke-width="1"/>
+    <line x1="718" y1="310" x2="718" y2="346" stroke="rgba(76,214,128,0.25)" stroke-width="0.8"/>
+    <line x1="738" y1="310" x2="738" y2="346" stroke="rgba(76,214,128,0.25)" stroke-width="0.8"/>
+    <line x1="698" y1="328" x2="758" y2="328" stroke="rgba(76,214,128,0.25)" stroke-width="0.8"/>
+  </g>
+
+  <!-- Linha do solo -->
+  <line x1="0" y1="400" x2="800" y2="400" stroke="rgba(245,197,24,0.12)" stroke-width="1"/>
+</svg>
