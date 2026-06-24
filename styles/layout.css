@@ -148,9 +148,10 @@
 .footer-brand { margin-bottom: 16px; }
 .footer-logo {
   height: 40px;
-  width: auto;
+  width: 40px;
   display: block;
   object-fit: contain;
+  border-radius: 6px;
 }
 .footer-tagline { font-size: 13.5px; color: var(--on-dark-muted); margin-bottom: 20px; line-height: 1.6; }
 .footer-seal {
