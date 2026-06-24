@@ -39,6 +39,7 @@
 <link rel="stylesheet" href="styles/base.css">
 <link rel="stylesheet" href="styles/layout.css">
 <link rel="stylesheet" href="styles/sections.css">
+<link rel="stylesheet" href="styles/blog.css">
 
 <!-- Schema.org -->
 <script type="application/ld+json">
@@ -92,6 +93,7 @@
       <a href="#calculadora">Simular</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#contato">Contato</a>
+      <a href="blog/">Blog</a>
       <a class="btn btn--solar nav-wa-btn" href="https://wa.me/5511919457686?text=Ol%C3%A1%2C%20quero%20simular%20minha%20economia%20com%20energia%20solar!" target="_blank" rel="noopener">Falar no WhatsApp</a>
     </nav>
 
@@ -915,6 +917,23 @@
   </div>
 </section>
 
+<!-- ══════════════════════ BLOG — ÚLTIMAS DO BLOG ══════════════════════ -->
+<section class="latest-blog" id="latestBlogSection">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow--ink">Do blog</span>
+      <h2>Últimas do Blog</h2>
+      <p>Conteúdo sobre energia solar, sustentabilidade e economia para você tomar a melhor decisão.</p>
+    </div>
+    <div class="latest-blog-grid" id="latestBlogGrid">
+      <!-- Cards carregados via JS a partir de blog/posts.json -->
+    </div>
+    <div class="latest-blog-footer reveal">
+      <a class="btn btn--ghost-dark" href="blog/">Ver todos os artigos →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ══════════════════════ FOOTER ══════════════════════ -->
 <footer class="site-footer">
   <div class="wrap">
@@ -938,6 +957,7 @@
           <a href="#calculadora">Simular economia</a>
           <a href="#depoimentos">Depoimentos</a>
           <a href="#faq">FAQ</a>
+          <a href="blog/">Blog</a>
         </nav>
       </div>
       <div>
@@ -992,5 +1012,6 @@ window.CONFIG = {
 </script>
 <script src="js/main.js?v=2"></script>
 <script src="js/calculator.js?v=2"></script>
+<script src="js/blog.js?v=1"></script>
 </body>
 </html>
