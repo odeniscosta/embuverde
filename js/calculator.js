@@ -1,5 +1,5 @@
 // ============================================================
-// CALCULADORA DE ECONOMIA — Embuverde
+// CALCULADORA DE ECONOMIA — Embu Verde
 // Captura lead e envia para n8n webhook
 // ============================================================
 
@@ -95,7 +95,7 @@ calcWaDirect?.addEventListener('click', () => {
   const solutionLabel = RATES[calcData.solution]?.label || calcData.solution;
   const saving = fmt(Math.round(calcData.bill * RATES[calcData.solution].max));
   const texto = [
-    `Olá, Embuverde! Fiz a simulação no site.`,
+    `Olá, Embu Verde! Fiz a simulação no site.`,
     `Minha conta de luz é em média R$ ${calcData.bill}.`,
     `Tenho interesse na ${solutionLabel} com economia de até ${saving}/mês.`,
     `Quero saber mais!`,
@@ -163,7 +163,7 @@ calcForm?.addEventListener('submit', async (e) => {
   // Monta texto para WhatsApp
   const saving = fmt(Math.round(calcData.bill * RATES[calcData.solution].max));
   const texto = [
-    `Olá, Embuverde! Meu nome é ${nome}.`,
+    `Olá, Embu Verde! Meu nome é ${nome}.`,
     `Fiz a simulação e minha conta é em média R$ ${calcData.bill}.`,
     `Tenho interesse na ${solutionLabel} com economia de até ${saving}/mês.`,
     `Segmento: ${tipo}. Aguardo contato!`,
