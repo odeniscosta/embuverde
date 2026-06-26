@@ -132,7 +132,7 @@ if (contactForm) {
 
     // Abre WhatsApp com mensagem pronta
     const texto = [
-      `Olá, Taboão Verde! Meu nome é ${nome}.`,
+      `Olá, Embuverde! Meu nome é ${nome}.`,
       tipo ? `Sou do segmento: ${tipo}.` : null,
       msg   ? `Mensagem: ${msg}` : null,
     ].filter(Boolean).join(' ');
