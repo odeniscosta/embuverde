@@ -1,46 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Fundo midnight navy -->
-  <rect width="512" height="512" rx="80" fill="#0B1628"/>
-
-  <!-- Halo solar (anel externo) -->
-  <circle cx="256" cy="210" r="120" fill="none" stroke="#F5C518" stroke-width="18" opacity="0.18"/>
-
-  <!-- Raios do sol (8 raios finos) -->
-  <g stroke="#F5C518" stroke-width="12" stroke-linecap="round" opacity="0.55">
-    <line x1="256" y1="62"  x2="256" y2="38"/>
-    <line x1="337" y1="88"  x2="351" y2="69"/>
-    <line x1="388" y1="165" x2="408" y2="155"/>
-    <line x1="388" y1="255" x2="412" y2="255"/>
-    <line x1="175" y1="88"  x2="161" y2="69"/>
-    <line x1="124" y1="165" x2="104" y2="155"/>
-    <line x1="124" y1="255" x2="100" y2="255"/>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5C518"/>
+      <stop offset="100%" stop-color="#4CD680"/>
+    </linearGradient>
+  </defs>
+  <!-- Fundo quadrado arredondado -->
+  <rect width="512" height="512" rx="80" fill="#163A2C"/>
+  <!-- Círculo central (sol) -->
+  <circle cx="256" cy="256" r="112" fill="url(#g)"/>
+  <!-- 8 raios -->
+  <g stroke="url(#g)" stroke-width="20" stroke-linecap="round">
+    <!-- Cardinal -->
+    <line x1="256" y1="112" x2="256" y2="48"/>
+    <line x1="256" y1="400" x2="256" y2="464"/>
+    <line x1="112" y1="256" x2="48"  y2="256"/>
+    <line x1="400" y1="256" x2="464" y2="256"/>
+    <!-- Diagonal -->
+    <line x1="358" y1="154" x2="403" y2="109"/>
+    <line x1="358" y1="358" x2="403" y2="403"/>
+    <line x1="154" y1="358" x2="109" y2="403"/>
+    <line x1="154" y1="154" x2="109" y2="109"/>
   </g>
-
-  <!-- Sol (círculo amarelo) -->
-  <circle cx="256" cy="210" r="82" fill="#F5C518"/>
-
-  <!-- Folha grande (aponta para cima, sobrepõe o sol) -->
-  <path d="M256 88
-           C 210 88 155 148 155 240
-           C 155 340 200 435 256 450
-           C 312 435 357 340 357 240
-           C 357 148 302 88 256 88 Z"
-        fill="#4CD680"/>
-
-  <!-- Ponta superior da folha (sage, para dar profundidade) -->
-  <path d="M256 88
-           C 244 108 234 132 230 158
-           C 240 148 256 140 256 140
-           C 256 140 272 148 282 158
-           C 278 132 268 108 256 88 Z"
-        fill="#1A7A52"/>
-
-  <!-- Nervura central -->
-  <path d="M256 445 L256 120" stroke="#0B1628" stroke-width="9" stroke-linecap="round" opacity="0.35"/>
-
-  <!-- Nervuras laterais -->
-  <path d="M256 280 C 232 265 210 255 196 245" stroke="#0B1628" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
-  <path d="M256 320 C 280 305 302 295 316 285" stroke="#0B1628" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
-  <path d="M256 350 C 234 336 214 325 200 315" stroke="#0B1628" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
-  <path d="M256 390 C 274 376 292 365 305 355" stroke="#0B1628" stroke-width="6" stroke-linecap="round" opacity="0.25"/>
 </svg>
