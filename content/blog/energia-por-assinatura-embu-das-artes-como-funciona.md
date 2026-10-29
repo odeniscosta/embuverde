@@ -1,19 +1,18 @@
 ---
-title: "Energia por assinatura Embu das Artes: como funciona na prática para moradores e comércios"
-description: "Entenda a energia por assinatura em Embu das Artes: passo a passo da adesão, o que muda na conta de luz e quem pode aderir."
+title: "Energia por assinatura como funciona na prática para moradores e comércios"
+description: "Entenda a energia por assinatura: passo a passo da adesão, o que muda na conta de luz e quem pode aderir."
 date: "2026-10-28"
 slug: "energia-por-assinatura-embu-das-artes-como-funciona"
 tags:
   - "energia por assinatura"
   - "geração distribuída"
   - "conta de luz"
-  - "Embu das Artes"
   - "Lei 14.300"
 author: "Denis Costa"
 draft: false
 ---
 
-Quem paga a conta de luz em Embu das Artes já percebeu que a tarifa costuma pesar cada vez mais no orçamento. A energia por assinatura surge como alternativa para moradores, síndicos e pequenos comércios que querem reduzir esse gasto sem instalar painéis no próprio telhado. Neste texto, explicamos como o modelo funciona na prática, qual é o passo a passo da adesão, o que muda na sua fatura e quem pode aderir.
+Quem paga a conta de luz já percebeu que a tarifa costuma pesar cada vez mais no orçamento. A energia por assinatura surge como alternativa para moradores, síndicos e pequenos comércios que querem reduzir esse gasto sem instalar painéis no próprio telhado. Neste texto, explicamos como o modelo funciona na prática, qual é o passo a passo da adesão, o que muda na sua fatura e quem pode aderir.
 
 ## O que é energia por assinatura
 
@@ -23,7 +22,7 @@ Esse sistema é regulado pela Lei 14.300/2022, que criou o marco legal da microg
 
 ## Quem pode aderir
 
-De forma geral, podem aderir consumidores atendidos pela distribuidora da região, que é a responsável pelo fornecimento em Embu das Artes. Isso inclui casas, apartamentos, condomínios e pequenos comércios, desde que a unidade consumidora esteja regular e tenha histórico de consumo compatível com a oferta. Em áreas comuns de condomínios, a viabilidade depende da forma como a unidade é cadastrada e do contrato escolhido.
+De forma geral, podem aderir consumidores atendidos pela distribuidora da região, que é a responsável pelo fornecimento. Isso inclui casas, apartamentos, condomínios e pequenos comércios, desde que a unidade consumidora esteja regular e tenha histórico de consumo compatível com a oferta. Em áreas comuns de condomínios, a viabilidade depende da forma como a unidade é cadastrada e do contrato escolhido.
 
 Cada fornecedor define seus critérios comerciais, como consumo mínimo exigido e prazo de contrato. Por isso, antes de assinar, confirme as condições por escrito.
 
