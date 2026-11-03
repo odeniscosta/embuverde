@@ -8,6 +8,8 @@ tags:
   - "bandeiras tarifárias"
   - "TUSD e TE"
   - "Embu das Artes"
+cover: "/blog/como-ler-a-conta-de-luz-entenda-cada-cobranca.webp"
+coverAlt: "Como ler a conta de luz: entenda cada cobrança da sua fatura"
 author: "Denis Costa"
 draft: false
 ---
