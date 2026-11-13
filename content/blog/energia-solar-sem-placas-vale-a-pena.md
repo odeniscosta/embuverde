@@ -9,6 +9,8 @@ tags:
   - "geração distribuída"
   - "conta de luz"
   - "Embu das Artes"
+cover: "/blog/energia-solar-sem-placas-vale-a-pena.webp"
+coverAlt: "Energia solar sem placas: vale a pena assinar em Embu das Artes?"
 author: "Denis Costa"
 draft: false
 ---
