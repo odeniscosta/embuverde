@@ -11,8 +11,8 @@ tags:
   - "geração distribuída"
 cover: "/blog/bandeiras-tarifarias-o-que-sao-e-como-afetam-a-sua-conta.webp"
 coverAlt: "Bandeiras tarifárias: o que são e como afetam a sua conta"
-coverCredit: "Senado Federal do Brasil Fotos produzidas pelo Senado (16502320562), por Senado Federal — CC BY 2.0, via Wikimedia Commons"
-coverCreditUrl: "https://commons.wikimedia.org/wiki/File:Senado_Federal_do_Brasil_Fotos_produzidas_pelo_Senado_(16502320562).jpg"
+coverCredit: "Senado Federal do Brasil Fotos produzidas pelo Senado (16317056049), por Senado Federal — CC BY 2.0, via Wikimedia Commons"
+coverCreditUrl: "https://commons.wikimedia.org/wiki/File:Senado_Federal_do_Brasil_Fotos_produzidas_pelo_Senado_(16317056049).jpg"
 author: "Denis Costa"
 draft: false
 ---
