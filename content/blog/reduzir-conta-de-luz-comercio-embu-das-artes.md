@@ -1,5 +1,5 @@
 ---
-title: "Reduzir conta de luz comércio Embu das Artes: medidas práticas sem obra"
+title: "Como reduzir a conta de luz do comércio sem obra"
 description: "Veja como reduzir conta de luz comércio Embu das Artes com ajustes simples, horários e energia por assinatura, sem obra."
 date: "2026-11-24"
 slug: "reduzir-conta-de-luz-comercio-embu-das-artes"
@@ -9,6 +9,8 @@ tags:
   - "Embu das Artes"
   - "eficiência energética"
   - "energia por assinatura"
+cover: "/blog/reduzir-conta-de-luz-comercio-embu-das-artes.webp"
+coverAlt: "Como reduzir a conta de luz do comércio sem obra"
 author: "Denis Costa"
 draft: false
 ---
